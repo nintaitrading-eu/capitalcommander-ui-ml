@@ -1,0 +1,2 @@
+= capitalcommander-ui-ml
+OCaml web application that acts as a frontend for capitalcommander-api-rs.
