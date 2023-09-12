@@ -3,12 +3,17 @@ let render () =
   <html lang="en">
     <head>
       <meta charset="utf-8">
+      <link rel="stylesheet" href="assets/css/pure-min.css" />
+      <link rel="stylesheet" href="assets/css/fontawesome/css/fontawesome.min.css" />
+      <link rel="stylesheet" href="assets/css/fontawesome/css/solid.min.css" />
+      <link rel="stylesheet" href="assets/css/custom_style.css" />
+      <link rel="icon" type="image/png" href="assets/favicon.png" />
       <title>Account</title>
     </head>
     <body>
       <div class="pure-control-group">
         <a class="pure-button pure-button-active" href="/account/new" title="New" alt="New">
-          <i class="fa fa-file"></i>
+          <i class="fa-solid fa-file"></i>
         </a>
       </div>
       <div class="table-responsive">
@@ -31,10 +36,10 @@ let render () =
                 <td>TODO - account date_modified</td>
                 <td>
                   <a class="pure-button" href="#" title="Modify" alt="Modify">
-                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                    <i class="fa-solid fa-pencil"></i>
                   </a>
                   <a class="rest pure-button" href="#" title="Delete" alt="Delete">
-                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                    <i class="fa-solid fa-trash"></i>
                   </a>
                 </td>
               </tr>

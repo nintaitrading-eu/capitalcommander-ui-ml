@@ -5,22 +5,22 @@
 (generate_opam_files true)
 
 (source
- (github username/reponame))
+ (github rockwolf/nintaitrading-eu))
 
-(authors "Author Name")
+(authors "Andy Nagels")
 
-(maintainers "Maintainer Name")
+(maintainers "Andy Nagels")
 
-(license LICENSE)
+(license MIT)
 
-(documentation https://url/to/documentation)
+(documentation https://github.com/nintaitrading-eu/capitalcommander-ui-ml)
 
 (package
  (name capitalcommander)
- (synopsis "A short synopsis")
- (description "A longer description")
- (depends ocaml dune)
+ (synopsis "A web application to log trades.")
+ (description "A web application that acts as a front-end for capitalcommander-api-rs.")
+ (depends ocaml dune lwt_ppx crunch)
  (tags
-  (topics "to describe" your project)))
+  (ocaml frontend capitalcommander trading)))
 
 ; See the complete stanza docs at https://dune.readthedocs.io/en/stable/dune-files.html#dune-project
