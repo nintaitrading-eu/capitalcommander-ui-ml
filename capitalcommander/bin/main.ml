@@ -1,5 +1,5 @@
 let () =
-  Dream.run
+  Dream.run ~error_handler:(Dream.error_template Error.custom_error_template)
   @@ Dream.logger
   @@ Dream.router [
 
