@@ -4,3 +4,7 @@
  (libraries capitalcommander dream)
  (preprocess (pps lwt_ppx)))
 
+(rule
+ (targets version.ml)
+  (deps version.eml.html)
+   (action (run dream_eml %{deps} --workspace %{workspace_root})))
