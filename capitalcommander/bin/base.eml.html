@@ -3,19 +3,20 @@ let render title content =
   <html lang="en">
     <head>
       <meta charset="utf-8">
-      <link rel="stylesheet" href="assets/css/pure-min.css" />
-      <link rel="stylesheet" href="assets/css/fontawesome/css/fontawesome.min.css" />
-      <link rel="stylesheet" href="assets/css/fontawesome/css/solid.min.css" />
-      <link rel="stylesheet" href="assets/css/custom_style.css" />
-      <link rel="icon" type="image/png" href="assets/favicon.png" />
+      <link rel="stylesheet" href="/assets/css/pure-min.css" />
+      <link rel="stylesheet" href="/assets/css/fontawesome/css/fontawesome.min.css" />
+      <link rel="stylesheet" href="/assets/css/fontawesome/css/solid.min.css" />
+      <link rel="stylesheet" href="/assets/css/custom_style.css" />
+      <link rel="icon" type="image/png" href="/assets/favicon.png" />
       <title><%s title %></title>
     </head>
     <body>
-      <script src="assets/js/pure-css-menu.js"></script>
+      <script src="/assets/js/pure-css-menu.js"></script>
       <div class="custom-menu-wrapper">
         <div class="pure-menu custom-menu custom-menu-top">
-          <a class="pure-menu-heading custom-menu-brand" href="#">
-              <img src= "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAG7AAABuwBHnU4NQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAToSURBVFiFxZd7TJVlHMc/z3vO4eJR5BJhGmQiJydSXlC8QVKKTlY2NWzO64Y6HYVmmtIo1LbK1OWWYk5LTV3DJsnKXJqZudKJU0lEQA1EuSPncA7nynmf/lCZTs4Bgur717v393u+v89zeZ/neQX/kyak/zjeVG2Zo/WWJEFsiIyea5HyzsabV3/uiPGrR8b1anTrU00u5W7BrGN7H45lZUmlLLQg2VjftMFYb3lBwnaPAF+ED4ncopXZUjJJSGVWe4XTT8SFNbh1S00u3Zu4ZTCI91q98qWu2lw921hXukbUq4OQ9wOKOP4YQP6IEbriBuvbzahZgB8Ir4U3nh0aZXLr0kxOsRgVv7Zy7L6W7zHLJKnKssZas8PlcgNofBX7yUcAToUPjq+ut+4QgsHt9Tin0DDe5PJ51+gkGbf0SilU9QOH1ZlXXlKXabU4nD16+vuC/ey5A3OatAAFETFBDlwfNwt1kUR4NJMS5fytiGSjU5dhdIrR7UE+UPGlylKzqXkPyODeoT3Wuezqh1KKnwC0VRGGeU24NjvhCU8GPQLwra0PTSup8lkhpRjQ0cIAK3Iq/B12cx5gABb49/K75LTbegtF5AJopRR725lmol60DZGI1Z0pDJAlpWLNK9vvsDNWSDJy34/fdz/U6qV01rQz0pyu2QJMl5Jde9NjP2orx+s+0BWNDpsyEUhEcDQsomapp7x/ZQTiwkaSFD5uDJCv+vqnZCUmtvxnAIG+QawdvhK9pvkPjZBTN03u0+wtv1sBFKGwalgmQX5B/NlYVJ6R8FRdu226UlAIhYSn09HrggCY9ux8YkKGknP9MPtLjpR2xKNLizCp/+eEB8RjCJ7M8VsHeW3AAkqNxews3N1hj388AoaQhYQHxFNvu46vRs/rUSuxu218enE9LtXjmus8gOKjZcCoGeEPv9P7RPF82CokKrmly8kumE9l8w32FG2i2lrVqY60OwUzt27G8HLCTJPlKjgvAgqx/Q4gULhcuxuT4w5Gl5aNFxbS4JCArvsAQgcPYtCkl0AIXWBADlb3IvT+I/DRBGO0F3G+6rNWC7fq6kh/HlPrFAROnsiQXdtRfHxag9N3Z4MQVBaeypeykb5BX9E38C1cqpFfyuZ0uljbAEIQvDSVyB1bCZmYyPBtWxAaDcPSlqAPexJTZRW/7kw92Wh6BZf7Nqpq5cKdubSoXveXDksblL0Vv6lJNP32O7baOvrMmEbs+kzCk6eAlHyzOI2ASHCrt6lomI6LaMyOIrrrGNH6TU3CdDCHG5kbsCCRPfUMnJ0CwLW8o9QUFRMQeS/ZrdbR5DzTbcUBtMaVa6n99jskIAVcXL6akQe+RNNTz7F31nZbIY8AtkO5PHwLc9vsnE5dhjskBLWlBS83tO4BaOulo9GIpdHU3oW4W6SArGkvyWpWzIDlXwFQnH6RwDrA7imp9JRviVa09BOIJcCVbgXoU1PQ/Nyta1lqi9YA8mto/W95RCEhd5sMfW/vjOtfHiMUGQ8cAlxdBnjwMKrySsWE8uJ5ihBjBJz11mhS5M0zKdHFKWqL+xmkXANUdBnggZLLrp57o6xorBByPuD1aFsSW1S1Ku7yJ7pA20CESJGSE3gYQU9q8ysQIPmraN+26OjDFpvIAGnzZpIVXejk3pQcmvZDQgxolwmJuSMAfwNeAuvUOwSw4AAAAABJRU5ErkJggg==" /></a>
+          <!--a class="pure-menu-heading custom-menu-brand" href="#">
+            <img src= "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAG7AAABuwBHnU4NQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAToSURBVFiFxZd7TJVlHMc/z3vO4eJR5BJhGmQiJydSXlC8QVKKTlY2NWzO64Y6HYVmmtIo1LbK1OWWYk5LTV3DJsnKXJqZudKJU0lEQA1EuSPncA7nynmf/lCZTs4Bgur717v393u+v89zeZ/neQX/kyak/zjeVG2Zo/WWJEFsiIyea5HyzsabV3/uiPGrR8b1anTrU00u5W7BrGN7H45lZUmlLLQg2VjftMFYb3lBwnaPAF+ED4ncopXZUjJJSGVWe4XTT8SFNbh1S00u3Zu4ZTCI91q98qWu2lw921hXukbUq4OQ9wOKOP4YQP6IEbriBuvbzahZgB8Ir4U3nh0aZXLr0kxOsRgVv7Zy7L6W7zHLJKnKssZas8PlcgNofBX7yUcAToUPjq+ut+4QgsHt9Tin0DDe5PJ51+gkGbf0SilU9QOH1ZlXXlKXabU4nD16+vuC/ey5A3OatAAFETFBDlwfNwt1kUR4NJMS5fytiGSjU5dhdIrR7UE+UPGlylKzqXkPyODeoT3Wuezqh1KKnwC0VRGGeU24NjvhCU8GPQLwra0PTSup8lkhpRjQ0cIAK3Iq/B12cx5gABb49/K75LTbegtF5AJopRR725lmol60DZGI1Z0pDJAlpWLNK9vvsDNWSDJy34/fdz/U6qV01rQz0pyu2QJMl5Jde9NjP2orx+s+0BWNDpsyEUhEcDQsomapp7x/ZQTiwkaSFD5uDJCv+vqnZCUmtvxnAIG+QawdvhK9pvkPjZBTN03u0+wtv1sBFKGwalgmQX5B/NlYVJ6R8FRdu226UlAIhYSn09HrggCY9ux8YkKGknP9MPtLjpR2xKNLizCp/+eEB8RjCJ7M8VsHeW3AAkqNxews3N1hj388AoaQhYQHxFNvu46vRs/rUSuxu218enE9LtXjmus8gOKjZcCoGeEPv9P7RPF82CokKrmly8kumE9l8w32FG2i2lrVqY60OwUzt27G8HLCTJPlKjgvAgqx/Q4gULhcuxuT4w5Gl5aNFxbS4JCArvsAQgcPYtCkl0AIXWBADlb3IvT+I/DRBGO0F3G+6rNWC7fq6kh/HlPrFAROnsiQXdtRfHxag9N3Z4MQVBaeypeykb5BX9E38C1cqpFfyuZ0uljbAEIQvDSVyB1bCZmYyPBtWxAaDcPSlqAPexJTZRW/7kw92Wh6BZf7Nqpq5cKdubSoXveXDksblL0Vv6lJNP32O7baOvrMmEbs+kzCk6eAlHyzOI2ASHCrt6lomI6LaMyOIrrrGNH6TU3CdDCHG5kbsCCRPfUMnJ0CwLW8o9QUFRMQeS/ZrdbR5DzTbcUBtMaVa6n99jskIAVcXL6akQe+RNNTz7F31nZbIY8AtkO5PHwLc9vsnE5dhjskBLWlBS83tO4BaOulo9GIpdHU3oW4W6SArGkvyWpWzIDlXwFQnH6RwDrA7imp9JRviVa09BOIJcCVbgXoU1PQ/Nyta1lqi9YA8mto/W95RCEhd5sMfW/vjOtfHiMUGQ8cAlxdBnjwMKrySsWE8uJ5ihBjBJz11mhS5M0zKdHFKWqL+xmkXANUdBnggZLLrp57o6xorBByPuD1aFsSW1S1Ku7yJ7pA20CESJGSE3gYQU9q8ysQIPmraN+26OjDFpvIAGnzZpIVXejk3pQcmvZDQgxolwmJuSMAfwNeAuvUOwSw4AAAAABJRU5ErkJggg==" />
+          </a>
           <a class="custom-menu-toggle" id="toggle" href="#">
             <s class="bar" />
             <s class="bar" />
@@ -82,9 +83,10 @@ let render title content =
                   <a class="pure-menu-link" href="/about">About <i class="fa-solid fa-info" title="About"></i></a>
                 </li>
               </ul>
-            </div>
+            </div-->
           </div>
         </div>
+      </div>
       <div id="main">
         <%s! content %>
       </div>
