@@ -1,0 +1,18 @@
+let render title content =
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="assets/css/pure-min.css" />
+      <link rel="stylesheet" href="assets/css/fontawesome/css/fontawesome.min.css" />
+      <link rel="stylesheet" href="assets/css/fontawesome/css/solid.min.css" />
+      <link rel="stylesheet" href="assets/css/custom_style.css" />
+      <link rel="icon" type="image/png" href="assets/favicon.png" />
+      <title><%s title %></title>
+    </head>
+    <body>
+      <div id="main">
+        <%s! content %>
+      </div>
+    </body>
+  </html>

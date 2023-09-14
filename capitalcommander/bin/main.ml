@@ -14,10 +14,10 @@ let () =
         Dream.html (Printf.sprintf "Running..."));
 
     Dream.get "/version" (fun _ ->
-      Dream.html (Version.render ()));
+      Dream.html (Base.render "Version" (Version.render ())));
 
     Dream.get "/account" (fun _ ->
-        Dream.html (Account.render ()));
+        Dream.html (Base.render "Account" (Account.render ())));
 
     Dream.get "/" (fun _ ->
       Dream.html (Printf.sprintf "Welcome."));
