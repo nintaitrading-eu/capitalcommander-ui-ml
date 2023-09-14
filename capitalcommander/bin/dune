@@ -20,8 +20,8 @@
    (action (run dream_eml %{deps} --workspace %{workspace_root})))
 
 (rule
- (targets account.ml)
-  (deps account.eml.html)
+ (targets admin_account.ml)
+  (deps admin_account.eml.html)
    (action (run dream_eml %{deps} --workspace %{workspace_root})))
 
 (rule

@@ -16,8 +16,8 @@ let () =
     Dream.get "/version" (fun _ ->
       Dream.html (Base.render "Version" (Version.render ())));
 
-    Dream.get "/account" (fun _ ->
-        Dream.html (Base.render "Account" (Account.render ())));
+    Dream.get "/admin/account" (fun _ ->
+        Dream.html (Base.render "Account" (Admin_account.render ())));
 
     Dream.get "/" (fun _ ->
       Dream.html (Printf.sprintf "Welcome."));
